@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/montfort-high-school-repalle/static/css/main.2e6f88c9.css",
+    "main.js": "/montfort-high-school-repalle/static/js/main.e9df39f2.js",
+    "static/js/453.19d34ca8.chunk.js": "/montfort-high-school-repalle/static/js/453.19d34ca8.chunk.js",
+    "index.html": "/montfort-high-school-repalle/index.html",
+    "main.2e6f88c9.css.map": "/montfort-high-school-repalle/static/css/main.2e6f88c9.css.map",
+    "main.e9df39f2.js.map": "/montfort-high-school-repalle/static/js/main.e9df39f2.js.map",
+    "453.19d34ca8.chunk.js.map": "/montfort-high-school-repalle/static/js/453.19d34ca8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e6f88c9.css",
+    "static/js/main.e9df39f2.js"
+  ]
+}
