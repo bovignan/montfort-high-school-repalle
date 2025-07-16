@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 
+// ✅ Use PUBLIC_URL for GitHub Pages compatibility
 const images = [
-  "/photos/photo1.jpg",
-  "/photos/photo3.jpg",
-  "/photos/photo4.jpg",
-  "/photos/photo2.jpg",
-  // Add more image paths from your `public/photos` folder
+  `${process.env.PUBLIC_URL}/photos/photo1.jpg`,
+  `${process.env.PUBLIC_URL}/photos/photo3.jpg`,
+  `${process.env.PUBLIC_URL}/photos/photo4.jpg`,
+  `${process.env.PUBLIC_URL}/photos/photo2.jpg`,
+  // Add more image paths similarly
 ];
 
 function GallerySection() {
@@ -14,15 +15,13 @@ function GallerySection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000); // change every 3s
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="border p-6 bg-yellow-50 shadow-lg rounded-lg mt-6">
-      
-
-      <div className="relative w-full h-[500px] overflow-hidden rounded">  {/* ⬅ increased height */}
+      <div className="relative w-full h-[500px] overflow-hidden rounded">
         <img
           src={images[current]}
           alt={`Slide ${current + 1}`}
